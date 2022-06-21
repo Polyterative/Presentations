@@ -1,0 +1,7 @@
+{
+  "controls":                     true,
+  "progress":                     true,
+  "transition":                   "fade",
+  "parallaxBackgroundHorizontal": 200,
+  "parallaxBackgroundVertical":   50
+}

@@ -1,0 +1,87 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" xmlns="http://www.w3.org/2000/svg" >
+	<style>
+		.circle,
+		.text{
+			position: absolute;
+		}
+		.circle{
+			mix-blend-mode: screen;
+			opacity: 0.5;
+			transform-origin: 50% 50%;
+      fill: #313B44;
+			z-index: 0;
+		}
+		text{
+			fill: #C3B6A2;
+      font-family: 'Avenir Next', 'Avenir', 'jost', 'Helvetica', 'Tahoma', sans-serif;
+			font-size: 40px;
+      mix-blend-mode: screen;
+			z-index: 1;			
+		}
+    .circle.design{
+    	animation: 1.3s ease-in-out 0.5s infinite design;
+    }
+    @keyframes design{
+    	0%{transform: scale(1);}
+    	10%{ transform: scale(1.15);}
+    	20%{transform: scale(1);}
+    	32%{ transform: scale(1.05);}
+    	40%{transform: scale(1.02);}
+    	100%{transform: scale(1);}
+    }
+    .art{
+    	animation: 3s ease-in-out infinite alternate art;
+    }
+    @keyframes art{
+    	0%{
+    		transform:
+    			translateX(13%)
+    			translateY(13%);
+    	}
+    	100%{
+    		transform:
+    			translateX(25%)
+    			translateY(25%);
+    	}
+    }
+    .engineering{
+    	animation: 15s linear infinite engineering;
+    }
+    @keyframes engineering{
+    	from{
+				transform: rotate(0deg) translateX(15%) rotate(0deg);
+			}
+    	to{
+				transform: rotate(360deg) translateX(15%) rotate(-360deg);
+			}
+    }
+    .business{
+    	animation: 13s linear infinite business;
+    }
+    @keyframes business{
+    	from{
+				transform: rotate(0deg) translateX(-15%) rotate(0deg);
+			}
+    	to{
+				transform: rotate(360deg) translateX(-15%) rotate(-360deg);
+			}
+    }
+	</style>
+	
+	<g class="text engineering">
+		<text x="490" y="460">Engineering</text>
+	</g>
+	<g class="text business">
+		<text x="530" y="460">Business</text>
+	</g>
+	<g class="text design">
+		<text x="540" y="460">Design</text>
+	</g>
+	<g class="text art">
+		<text x="575" y="460">Art</text>
+	</g>
+	<circle cx="600.5" cy="450.5" r="165.5" class="circle engineering"/>
+	<circle cx="600.5" cy="450.5" r="165.5" class="circle business"/>
+	<circle cx="600.5" cy="450.5" r="165.5" class="circle design"/>
+	<circle cx="600.5" cy="450.5" r="165.5" class="circle art"/>
+</svg>
