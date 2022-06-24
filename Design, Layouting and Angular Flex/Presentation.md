@@ -540,3 +540,126 @@ https://tburleson-layouts-demos.firebaseapp.com/#/docs
 ---
 
 # Let's build some UIs
+
+----
+
+# Final code
+
+```html
+<div fxFlex="auto"
+     fxLayout="row"
+     fxLayoutGap="1rem"
+>
+  <mat-card class="item"
+  >
+    <div fxFlex="auto"
+         fxLayout="column"
+         fxLayoutGap="1rem"
+    >
+      <app-brand-primary-button>Btn</app-brand-primary-button>
+      <app-brand-primary-button>Btn</app-brand-primary-button>
+      <app-brand-primary-button>Btn</app-brand-primary-button>
+    </div>
+  </mat-card>
+  <mat-card fxFlex="30%"
+            fxLayout="column"
+            fxLayoutGap="1rem"
+            class="item"
+  >
+    <div fxFlex="auto"
+         fxLayout="row"
+         fxLayoutGap="1rem"
+    >
+      <mat-card-title fxFlex="grow">Chat</mat-card-title>
+      <mat-icon>home</mat-icon>
+    </div>
+    <mat-divider inset="true"></mat-divider>
+    <div>Person</div>
+    <div>Person</div>
+    <div>Person</div>
+    <div>Person</div>
+    <div>Person</div>
+    <div>Person</div>
+    <div>Person</div>
+  </mat-card>
+  <mat-card fxFlex="grow"
+            fxLayout="column"
+            fxLayoutGap=".5rem"
+            class="item"
+  >
+    <div fxFlex="1rem"
+         fxLayoutAlign="center top"
+    >
+      Your status is set to do not disturb
+    </div>
+    <div fxLayout="row"
+         fxLayoutGap=".25rem"
+    >
+      <mat-icon>home</mat-icon>
+      <mat-card-subtitle fxLayoutAlign="left center"
+      > Title
+      </mat-card-subtitle>
+      <div fxFlex="grow"></div>
+      <mat-icon>home</mat-icon>
+      <mat-icon>home</mat-icon>
+      <mat-icon>home</mat-icon>
+      <mat-icon>home</mat-icon>
+    </div>
+    <mat-divider inset="true"></mat-divider>
+    <div fxLayout="column"
+    >
+      <div fxFlex="auto"
+           fxLayout="row"
+           fxLayoutGap=".5rem"
+      >
+        <div fxLayoutAlign="center center">
+          <mat-icon>home</mat-icon>
+        </div>
+        <div fxLayout="column"
+        >
+          <mat-card-subtitle> Title
+          </mat-card-subtitle>
+          <div>MSG</div>
+        </div>
+      </div>
+    </div>
+    <div fxLayout="column"
+    >
+      <div fxFlex="auto"
+           fxLayout="row"
+           fxLayoutGap=".5rem"
+      >
+        <div fxLayoutAlign="center center">
+          <mat-icon>home</mat-icon>
+        </div>
+        <div fxLayout="column"
+        >
+          <mat-card-subtitle> Title
+          </mat-card-subtitle>
+          <div>MSG</div>
+        </div>
+      </div>
+    </div>
+    <div fxLayout="column"
+    >
+      <div fxFlex="auto"
+           fxLayout="row"
+           fxLayout.md="column"
+           fxLayoutGap=".5rem"
+      >
+        <div fxLayoutAlign="center center">
+          <mat-icon>home</mat-icon>
+        </div>
+        <div fxLayout="column"
+        >
+          <mat-card-subtitle> Title
+          </mat-card-subtitle>
+          <div>MSG</div>
+        </div>
+      </div>
+    </div>
+    <mat-divider inset="true"></mat-divider>
+  
+  </mat-card>
+</div>
+```
