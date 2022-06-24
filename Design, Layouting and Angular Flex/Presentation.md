@@ -202,11 +202,6 @@
 
 ----
 
-### Teams (communication)
-![./img/teams.png](./img/teams.png)
-
-----
-
 ### Notion (note-taking)
 ![./img/notion.png](./img/notion.png)
 
